@@ -1,6 +1,6 @@
 {
   "name": "zooid-ui-json-schema-editor",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "JsonSchemaEditor",
   "main": "dist/bundle.js",
   "scripts": {
