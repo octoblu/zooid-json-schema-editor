@@ -19,7 +19,7 @@ class JsonSchemaEditor extends React.Component {
     schema: React.PropTypes.object.isRequired,
     form: React.PropTypes.array,
     model: React.PropTypes.object,
-    onSubmit: React.PropTypes.func
+    onSubmit: React.PropTypes.func.isRequired,
   }
 
   state = {
