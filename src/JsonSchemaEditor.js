@@ -27,7 +27,7 @@ class JsonSchemaEditor extends React.Component {
   }
 
   componentWillMount = () => {
-    this.state.model = this.props.model
+    this.setState({model: this.props.model})
   }
 
   onChange = (key, value) => {
