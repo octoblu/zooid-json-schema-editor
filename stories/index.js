@@ -1,7 +1,7 @@
 import React from 'react';
-import { storiesOf, action } from '@kadira/storybook';
+import { storiesOf, action } from '@kadira/storybook'
 
-import JsonSchemaEditor from '../src';
+import JsonSchemaEditor from '../src'
 
 storiesOf('JsonSchemaEditor', module)
   .add('Basic', () => {

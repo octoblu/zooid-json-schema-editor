@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 
 import {SchemaForm, utils} from 'react-schema-form'
-import RaisedButton from 'material-ui/RaisedButton';
+import Button from 'zooid-button'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
@@ -50,7 +50,7 @@ class JsonSchemaEditor extends React.Component {
         <form onSubmit={this.onSubmit}>
           <SchemaForm schema={schema} form={form} model={model} onModelChange={this.onChange}></SchemaForm>
           <div className={styles.alignRight}>
-            <RaisedButton label="Submit" primary onMouseUp={this.onSubmit} />
+            <Button kind="primary" size="large" onClick={this.onSubmit} >Submit</Button>
           </div>
         </form>
       </MuiThemeProvider>
