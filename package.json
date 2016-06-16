@@ -1,8 +1,8 @@
 {
   "name": "zooid-ui-json-schema-editor",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "JsonSchemaEditor",
-  "main": "src/index.js",
+  "main": "dist/bundle.js",
   "scripts": {
     "clean": "rimraf lib dist coverage",
     "start": "npm run storybook",
