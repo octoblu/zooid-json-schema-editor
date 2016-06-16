@@ -36,7 +36,8 @@ class JsonSchemaEditor extends React.Component {
     this.setState({ model: newModel })
   }
 
-  onSubmit = () => {
+  onSubmit = (event) => {
+    event.preventDefault()
     this.props.onSubmit(this.state.model)
   }
 
@@ -46,12 +47,12 @@ class JsonSchemaEditor extends React.Component {
 
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <div>
+        <form onSubmit={this.onSubmit}>
           <SchemaForm schema={schema} form={form} model={model} onModelChange={this.onChange}></SchemaForm>
           <div className={styles.alignRight}>
             <RaisedButton label="Submit" primary onMouseUp={this.onSubmit} />
           </div>
-        </div>
+        </form>
       </MuiThemeProvider>
     )
   }
