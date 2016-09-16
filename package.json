@@ -8,7 +8,7 @@
     "start": "npm run storybook",
     "storybook": "start-storybook -p 9001",
     "build": "webpack",
-    "test": "nyc --require babel-core/register --require babel-polyfill mocha",
+    "test": "istanbul cover _mocha -- -R spec --require coffee-coverage/register-istanbul && mocha --reporter json > coverage/mocha.json",
     "test:watch": "mocha -w -R mocha-multi --reporter-options spec=-,mocha-osx-reporter=-"
   },
   "repository": {
